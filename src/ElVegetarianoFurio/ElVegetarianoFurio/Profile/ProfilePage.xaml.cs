@@ -5,10 +5,10 @@ public partial class ProfilePage : ContentPage
 
 	private ProfileViewModel _viewModel;
 
-	public ProfilePage()
+	public ProfilePage(ProfileViewModel viewModel)
 	{
 		InitializeComponent();
-		BindingContext = _viewModel = new ProfileViewModel();
+		BindingContext = _viewModel = viewModel;
 	}
 
     protected override async void OnNavigatedTo(NavigatedToEventArgs args)
