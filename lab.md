@@ -1,12 +1,11 @@
-# Übung 5
+# Übung 6: Navigation
 
-- Legen Sie in Ihrem Projekt `ElVegetarianoFurio` einen Ordner `Data` und einen Ordner `Menu` im Wurzelverzeichnis an.
-- Kopieren Sie aus den allgemeinen Beispieldateien zur Schulung die Klassen `Dish.cs` und `Category.cs` aus  dem Ordner `Data` der Beispieldateien in den Ordner `Menu` Ihres Projekts
-- Kopieren Sie die Dateien `IDataService.cs` und `DummyDataService.cs` in den Ordner `Data` Ihres Projekts
-- Entfernen Sie den Inhalt der ContentPage aus der Datei `MainPage.xaml`
-- Entfernen Sie aus der Datei `MainPage.xaml.cs` das Feld `count`, sowie die Methode `OnCounterClicked`
-- Legen Sie eine Klasse `MainViewModel` im Wurzelverzeichnis der Anwendung an. Fügen Sie Code zum Laden der Daten hinzu
-- Bearbeiten Sie die Datei `MainPage.xml` und fügen Sie einen CollectionView mit dem Layout des Screenshots hinzu
-- Registrieren Sie sämtliche Abhängigkeiten in der Datei `MauiProgram.cs`. Nutzen Sie dazu die Erweiterungsmethoden aus dem .NET MAUI Community Toolkit.
+- Legen Sie in Ihrem Projekt `ElVegetarianoFurio` eine neue Seite `CategoryPage.xaml` im Ordner Menu an.
+- Legen Sie ein ViewModel `CategoryViewModel` mit den Eigenschaften  `Category` und `Dishes` an. Dishes ist eine ObservableCollection!
+- Legen Sie eine Methode zum Laden der Liste der Dishes über den DataService anhand der vorgegebenen Category an
+- Verbinden Sie View und ViewModel. 
+- Registrieren Sie View und ViewModel in der DependencyInjection und registrieren Sie eine Route für die CategoryPage
+- Erstellen Sie das Layout für die Seite `CategoryPage.xaml` anlaog zum Screenshot
+
 
 ![Übung](lab.png)
